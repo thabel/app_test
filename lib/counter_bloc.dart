@@ -8,7 +8,11 @@ final class CounterIncrementPressed extends CounterEvent {}
 class CounterBloc extends HydratedBloc<CounterEvent, int> {
   CounterBloc() : super(65) {
     on<CounterIncrementPressed>((event, emit) {
-      emit(state + 1);
+     if (state > (65 + 25)) // last later in alpahbet then
+    {
+      return emit(65);
+    }
+    return emit((state + 1));
     });
   }
 
