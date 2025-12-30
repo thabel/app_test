@@ -54,6 +54,9 @@ Navigator.of(context).pushNamed(RouteGenerator.infoPage);
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+       appBar: AppBar(
+        title: const Text("Todo Page"),
+      ),
       body: Consumer<TodoCache>(
         builder:  (context, cache, _) {
           return  ListView.builder(
@@ -80,7 +83,11 @@ class InfoPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: 
+    return Scaffold(
+       appBar: AppBar(
+        title: const Text("Info Page"),
+      ),
+      body: 
     Consumer<TodoCache>(
    
       builder: (context, cache , _) {

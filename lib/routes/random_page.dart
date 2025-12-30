@@ -5,6 +5,10 @@ class RandomPage extends StatelessWidget {
   const RandomPage();
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: Center(child: Text("${Random().nextInt(20)}")));
+    return Scaffold(
+       appBar: AppBar(
+        title: const Text("Random Page"),
+      ),
+      body: Center(child: Text("${Random().nextInt(20)}")));
   }
 }

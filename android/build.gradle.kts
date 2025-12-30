@@ -5,10 +5,6 @@ allprojects {
     }
 }
 
-defaultConfig {
-    minSdkVersion 19
-}
-
 val newBuildDir: Directory =
     rootProject.layout.buildDirectory
         .dir("../../build")

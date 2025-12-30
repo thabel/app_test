@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-final String websiteUrl = "https://flutter.dev";
+final String websiteUrl = "https://offlinked.com/";
 
 class WebViewPage extends StatefulWidget {
   const WebViewPage({super.key});
